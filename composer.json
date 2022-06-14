@@ -1,0 +1,20 @@
+{
+    "name": "idoalit/slims-eloquent-models",
+    "description": "Models for SLiMS database with Eloquent ORM",
+    "type": "library",
+    "require": {
+        "illuminate/database": "^8.83"
+    },
+    "license": "GPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Idoalit\\SlimsEloquentModels\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Waris Agung Widodo",
+            "email": "ido.alit@gmail.com"
+        }
+    ]
+}
