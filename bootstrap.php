@@ -7,7 +7,7 @@ $manager = new Manager();
 
 // add SLiMS default connection
 $manager->addConnection([
-    "driver" => DB_DRIVER ?? 'mysql',
+    "driver" => defined('DB_DRIVER') ? DB_DRIVER : 'mysql',
     "host" => DB_HOST,
     "port" => DB_PORT,
     "database" => DB_NAME,
