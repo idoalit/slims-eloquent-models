@@ -1,4 +1,5 @@
 <?php
+namespace Idoalit\SlimsEloquentModels;
 
 use Illuminate\Database\Eloquent\Model;
 
