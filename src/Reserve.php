@@ -19,6 +19,13 @@ class Reserve extends Model {
     protected $primaryKey = 'reserve_id';
 
     /**
+     * The attributes that aren't mass assignable.
+     *
+     * @var array
+     */
+    protected $guarded = ['reserve_id'];
+
+    /**
      * Indicates if the model's ID is auto-incrementing.
      *
      * @var bool

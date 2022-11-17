@@ -19,6 +19,13 @@ class loanRule extends Model {
     protected $primaryKey = 'loan_rules_id';
 
     /**
+     * The attributes that aren't mass assignable.
+     *
+     * @var array
+     */
+    protected $guarded = ['loan_rules_id'];
+
+    /**
      * Indicates if the model's ID is auto-incrementing.
      *
      * @var bool
