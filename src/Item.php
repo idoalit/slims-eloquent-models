@@ -41,4 +41,8 @@ class Item extends Model {
 
     const CREATED_AT = 'input_date';
     const UPDATED_AT = 'last_update';
+
+    function biblio() {
+        return $this->belongsTo(Biblio::class, 'biblio_id', 'biblio_id');
+    }
 }

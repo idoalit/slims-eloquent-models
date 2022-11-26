@@ -41,4 +41,8 @@ class Loan extends Model {
 
     const CREATED_AT = 'input_date';
     const UPDATED_AT = 'last_update';
+
+    function item() {
+        return $this->belongsTo(Item::class, 'item_code', 'item_code');
+    }
 }

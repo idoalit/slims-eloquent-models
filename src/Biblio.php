@@ -41,4 +41,8 @@ class Biblio extends Model {
 
     const CREATED_AT = 'input_date';
     const UPDATED_AT = 'last_update';
+
+    function items() {
+        return $this->hasMany(Item::class, 'biblio_id', 'biblio_id');
+    }
 }
