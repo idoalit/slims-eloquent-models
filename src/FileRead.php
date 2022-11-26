@@ -19,6 +19,13 @@ class FileRead extends Model {
     protected $primaryKey = 'filelog_id';
 
     /**
+     * The attributes that aren't mass assignable.
+     *
+     * @var array
+     */
+    protected $guarded = ['filelog_id'];
+
+    /**
      * Indicates if the model's ID is auto-incrementing.
      *
      * @var bool

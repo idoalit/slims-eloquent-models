@@ -19,6 +19,13 @@ class Comment extends Model {
     protected $primaryKey = 'comment_id';
 
     /**
+     * The attributes that aren't mass assignable.
+     *
+     * @var array
+     */
+    protected $guarded = ['comment_id'];
+
+    /**
      * Indicates if the model's ID is auto-incrementing.
      *
      * @var bool

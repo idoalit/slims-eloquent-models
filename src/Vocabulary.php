@@ -19,6 +19,13 @@ class Vocabulary extends Model {
     protected $primaryKey = 'vocabolary_id';
 
     /**
+     * The attributes that aren't mass assignable.
+     *
+     * @var array
+     */
+    protected $guarded = ['vocabolary_id'];
+
+    /**
      * Indicates if the model's ID is auto-incrementing.
      *
      * @var bool

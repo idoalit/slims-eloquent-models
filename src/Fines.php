@@ -19,6 +19,13 @@ class Fines extends Model {
     protected $primaryKey = 'fines_id';
 
     /**
+     * The attributes that aren't mass assignable.
+     *
+     * @var array
+     */
+    protected $guarded = ['fines_id'];
+
+    /**
      * Indicates if the model's ID is auto-incrementing.
      *
      * @var bool

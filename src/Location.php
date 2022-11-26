@@ -19,6 +19,13 @@ class Location extends Model {
     protected $primaryKey = 'location_id';
 
     /**
+     * The attributes that aren't mass assignable.
+     *
+     * @var array
+     */
+    protected $guarded = ['location_id'];
+
+    /**
      * Indicates if the model's ID is auto-incrementing.
      *
      * @var bool

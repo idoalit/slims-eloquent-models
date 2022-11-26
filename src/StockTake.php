@@ -19,6 +19,13 @@ class StockTake extends Model {
     protected $primaryKey = 'stock_take_id';
 
     /**
+     * The attributes that aren't mass assignable.
+     *
+     * @var array
+     */
+    protected $guarded = ['stock_take_id'];
+
+    /**
      * Indicates if the model's ID is auto-incrementing.
      *
      * @var bool

@@ -19,6 +19,13 @@ class Place extends Model {
     protected $primaryKey = 'place_id';
 
     /**
+     * The attributes that aren't mass assignable.
+     *
+     * @var array
+     */
+    protected $guarded = ['place_id'];
+
+    /**
      * Indicates if the model's ID is auto-incrementing.
      *
      * @var bool

@@ -1,9 +1,11 @@
 <?php
+
 namespace Idoalit\SlimsEloquentModels;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Author extends Model {
+class Author extends Model
+{
     /**
      * The table associated with the model.
      *
@@ -17,6 +19,13 @@ class Author extends Model {
      * @var string
      */
     protected $primaryKey = 'author_id';
+
+    /**
+     * The attributes that aren't mass assignable.
+     *
+     * @var array
+     */
+    protected $guarded = ['author_id'];
 
     /**
      * Indicates if the model's ID is auto-incrementing.

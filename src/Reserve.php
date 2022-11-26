@@ -1,4 +1,5 @@
 <?php
+namespace Idoalit\SlimsEloquentModels;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -16,6 +17,13 @@ class Reserve extends Model {
      * @var string
      */
     protected $primaryKey = 'reserve_id';
+
+    /**
+     * The attributes that aren't mass assignable.
+     *
+     * @var array
+     */
+    protected $guarded = ['reserve_id'];
 
     /**
      * Indicates if the model's ID is auto-incrementing.

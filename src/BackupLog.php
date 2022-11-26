@@ -19,6 +19,13 @@ class BackupLog extends Model {
     protected $primaryKey = 'backup_log_id';
 
     /**
+     * The attributes that aren't mass assignable.
+     *
+     * @var array
+     */
+    protected $guarded = ['backup_log_id'];
+
+    /**
      * Indicates if the model's ID is auto-incrementing.
      *
      * @var bool

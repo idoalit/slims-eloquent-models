@@ -19,6 +19,13 @@ class ItemStatus extends Model {
     protected $primaryKey = 'item_status_id';
 
     /**
+     * The attributes that aren't mass assignable.
+     *
+     * @var array
+     */
+    protected $guarded = ['item_status_id'];
+
+    /**
      * Indicates if the model's ID is auto-incrementing.
      *
      * @var bool
