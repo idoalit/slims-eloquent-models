@@ -19,6 +19,13 @@ class Member extends Model {
     protected $primaryKey = 'member_id';
 
     /**
+     * The attributes that aren't mass assignable.
+     *
+     * @var array
+     */
+    protected $guarded = ['member_id'];
+
+    /**
      * Indicates if the model's ID is auto-incrementing.
      *
      * @var bool
