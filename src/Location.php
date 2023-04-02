@@ -30,14 +30,14 @@ class Location extends Model {
      *
      * @var bool
      */
-    public $incrementing = true;
+    public $incrementing = false;
 
     /**
      * The data type of the auto-incrementing ID.
      *
      * @var string
      */
-    protected $keyType = 'integer';
+    protected $keyType = 'string';
 
     /**
      * Indicates if the model should be timestamped.
