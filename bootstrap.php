@@ -6,13 +6,14 @@ use Illuminate\Database\Capsule\Manager;
 $manager = new Manager();
 
 // add SLiMS default connection
+$config = config('database.nodes.SLiMS');
 $manager->addConnection([
-    "driver" => defined('DB_DRIVER') ? DB_DRIVER : 'mysql',
-    "host" => DB_HOST,
-    "port" => DB_PORT,
-    "database" => DB_NAME,
-    "username" => DB_USERNAME,
-    "password" => DB_PASSWORD
+    "driver" => 'mysql',
+    "host" => $config['host'],
+    "port" => $config['port'],
+    "database" => $config['database'],
+    "username" => $config['username'],
+    "password" => $config['password']
 ]);
 
 // set connection as global
