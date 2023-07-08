@@ -9,7 +9,7 @@ class MemberType extends Model {
      *
      * @var string
      */
-    protected $table = 'mst_meber_type';
+    protected $table = 'mst_member_type';
 
     /**
      * The primary key associated with the table.
