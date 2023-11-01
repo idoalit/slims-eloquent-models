@@ -16,7 +16,7 @@ class BiblioTopic extends Model {
      *
      * @var string
      */
-    protected $primaryKey = 'bilbio_id';
+    protected $primaryKey = 'biblio_id';
 
     /**
      * Indicates if the model's ID is auto-incrementing.
