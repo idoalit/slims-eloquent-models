@@ -16,7 +16,7 @@ class Language extends Model {
      *
      * @var string
      */
-    protected $primaryKey = 'langauge_id';
+    protected $primaryKey = 'language_id';
 
     /**
      * Indicates if the model's ID is auto-incrementing.
