@@ -3,7 +3,7 @@ namespace Idoalit\SlimsEloquentModels;
 
 use Illuminate\Database\Eloquent\Model;
 
-class loanRule extends Model {
+class LoanRule extends Model {
     /**
      * The table associated with the model.
      *
