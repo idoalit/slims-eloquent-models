@@ -3,8 +3,8 @@
     "description": "Models for SLiMS database with Eloquent ORM",
     "type": "library",
     "require": {
-        "illuminate/database": "^11.5.0",
-        "illuminate/pagination": "^11.5.0"
+        "illuminate/database": "^11.7",
+        "illuminate/pagination": "^11.7"
     },
     "license": "GPL-3.0-or-later",
     "autoload": {
